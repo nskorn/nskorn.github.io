@@ -13,6 +13,8 @@ baseurl: /texture
 sass:
   sass_dir: _sass
 
+avatar: /screen1.png
+
 permalink: /posts/:title/
 texture:
   title: Adam Denisov
