@@ -17,7 +17,7 @@ avatar: /screen1.png
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
+  title: NSK
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   style: black
