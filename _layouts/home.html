@@ -2,20 +2,18 @@
 layout: page
 ---
 			{{ content }}
+<h2>Projects</h2>
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
-<a class="post-link" href="{{ post.url | relative_url }}">
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<div class="post-meta">
-				<h2 class="post-title">{{ post.title | escape }}</h2>
-				<ul class="post-tags">
-					{%- for tag in page.categories -%}
-						<li>{{ tag }}</li>
-					{%- endfor -%}
-				</ul>
+			<a class="post-link" href="{{ post.url | relative_url }}">
+				<h3 class="post-title">{{ post.title | escape }}</h3>
+				<div class="post-date"><i class="icon-calendar"></i>{{ post.link }}</div>
 		</div>
+		</a>
 		<div class="post">
 			{%- if site.show_excerpts -%}
 			{{ post.excerpt }}
