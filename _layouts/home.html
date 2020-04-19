@@ -2,21 +2,21 @@
 layout: page
 ---
 			{{ content }}
-<table>
-	<tr>
-			<th>{{ post.title | escape }}</th>
-			<th>{{ post.link }}</th>
-			<th>{{ post.tags }}</th>
-	</tr>
-	<tr>
-		<th>{{ post.content }}</th>
-	</tr>
-<table>
-
 
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
+	<table>
+		<tr>
+				<th>{{ post.title | escape }}</th>
+				<th>{{ post.link }}</th>
+				<th>{{ post.tags }}</th>
+		</tr>
+		<tr>
+			<th>{{ post.content }}</th>
+		</tr>
+	</table>
+
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<div class="post-meta">
