@@ -2,7 +2,6 @@
 layout: post
 title:  "Africa is a Country"
 description: *Not the continent with 55 countries
-date:   2020-04-19
 categories: Writing AfricanStudies
 ---
 
