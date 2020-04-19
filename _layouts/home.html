@@ -2,9 +2,21 @@
 layout: page
 ---
 			{{ content }}
+
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
+	<table>
+		<tr>
+				<td><h2>{{ post.title | escape }}</h2><br>
+				{{ post.link }}<br>
+				{{ post.tags }}</td>
+		</tr>
+		<tr>
+			<td>{{ post.content }}</td>
+		</tr>
+	</table>
+
 	<li>
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<div class="post-meta">
