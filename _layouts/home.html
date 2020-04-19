@@ -8,12 +8,12 @@ layout: page
 	{%- for post in site.posts -%}
 	<table>
 		<tr>
-				<th>{{ post.title | escape }}</th>
-				<th>{{ post.link }}</th>
-				<th>{{ post.tags }}</th>
+				<td><h2>{{ post.title | escape }}</h2><br>
+				{{ post.link }}<br>
+				{{ post.tags }}</td>
 		</tr>
 		<tr>
-			<th>{{ post.content }}</th>
+			<td>{{ post.content }}</td>
 		</tr>
 	</table>
 
