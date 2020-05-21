@@ -20,7 +20,7 @@ texture:
   title: Netta Kornberg
   tagline: connecting people to information
   date_format: "%b %-d, %Y"
-  style: black
+  style: red
   showNav: true
   showPicker: false
 
